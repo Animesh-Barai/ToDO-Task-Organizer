@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aork.todo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.todo.asifkhan.sqlitesimpletodoapp.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aork.todo.activities.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aork.todo.activities.CompletedTodos"
+            android:parentActivityName="com.example.aork.todo.activities.MainActivity" />
+        <activity
+            android:name="com.example.aork.todo.activities.AllTags"
+            android:parentActivityName="com.example.aork.todo.activities.MainActivity" />
+        <activity
+            android:name="com.example.aork.todo.activities.AppSettings"
+            android:parentActivityName="com.example.aork.todo.activities.MainActivity" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6575183577141875~7881060847"/>
+
+    </application>
+
+</manifest>
